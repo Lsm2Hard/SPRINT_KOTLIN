@@ -1,12 +1,13 @@
 fun main() {
-    var employee = 50
-    var salaryEmploee = 30000
-    var interns = 30
-    var salaryInterns = 20000
-    var expenses = 50 * 30000
-    var generalExpenses = expenses + (interns*salaryInterns)
-    var average = generalExpenses / 80
-    println(expenses)
+    val employeeCount = 50
+    val internsCount = 30
+    val salaryInterns = 20000
+    val salaryEmploee = 30000
+    val expensesEmployee = employeeCount * salaryEmploee
+    val generalExpenses = expensesEmployee + (internsCount * salaryInterns)
+    val average = generalExpenses / (employeeCount+internsCount)
+
+    println(expensesEmployee)
     println(generalExpenses)
     println(average)
 }
