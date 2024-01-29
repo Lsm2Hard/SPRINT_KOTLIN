@@ -13,6 +13,13 @@ fun main() {
 
     println("$from $where, $numberMove")
 
+    var a: Int = 1
+    var b: Double = 2.2
+    var c = b + a
+    println(c)
+
+
+
 
 
 
