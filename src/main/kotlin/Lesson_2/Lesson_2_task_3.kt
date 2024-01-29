@@ -1,28 +1,15 @@
 fun main() {
-  var hoursDepart = 9
-  var minDepart = 39
-  var minWay = 457
+    val hoursDepart = 9
+    val minDepart = 39
+    val minWay = 457
 
-  var sumMinute = minWay + minDepart
-  println(sumMinute)
-  var transMinInHours = sumMinute / 60
-  println(transMinInHours)
-  var searchLastMin = transMinInHours * 60
-  println(searchLastMin)
+    val sumMinute = minWay + minDepart
+    val transMinInHours = sumMinute / oneHoursMin
+    val searchLastMin = transMinInHours * oneHoursMin
 
-
-
-  var hoursWay = transMinInHours + hoursDepart
-  print(hoursWay)
-  print(":")
-  var lastMin = sumMinute - searchLastMin
-  print(lastMin)
-
-  var timeWay = sumMinute - minDepart - lastMin
-
-
-
-
+    println("${hoursDepart + transMinInHours}:${sumMinute - searchLastMin}")
 
 
 }
+
+const val oneHoursMin = 60
