@@ -3,18 +3,11 @@ fun main() {
     val firstNumber = readLine()!!.toInt()
     val secondNumber = readLine()!!.toInt()
 
-    if (firstNumber == numberWin1 && secondNumber == numberWin2)
-        println("good")
-      else if (firstNumber == numberWin2 && secondNumber == numberWin1)
-          println("good2")
-          else println(123)
-
-
-   // else if
-
-
-
-    //println("только одно вин1")
+    if (firstNumber == numberWin1 && secondNumber == numberWin2) || (firstNumber == numberWin2 && secondNumber == numberWin1 )
+        println("Поздравляем! Вы выиграли главный приз!")
+    else if (firstNumber == numberWin1 || secondNumber != numberWin1) && (secondNumber == numberWin2 || secondNumber != numberWin2)
+        println("Вы выиграли утешительный приз!")
+   // else firstNumber != numberWin1 && secondNumber != numberWin2
 
 
 }
