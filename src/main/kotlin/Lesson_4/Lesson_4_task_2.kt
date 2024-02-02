@@ -1,22 +1,28 @@
 fun main() {
-
-    val weightMin = 35
-    val weightMax = 100
-    val volume = 100
+    val weightProductOne = 20
+    val volumeProductOne = 80
+    val weightProductTwo = 50
+    val volumeProductTwo = 100
 
 
     println(
         "Груз с весом 20кг и объемом 80л соответствует категории Average: ${
-            (weightMin <= 20) && (20 <= weightMax) && (80 < volume)
+            (WEIGHT_MIN <= weightProductOne) && (weightProductOne <= WEIGHT_MAX)
+                    && (volumeProductOne < VOLUME)
         }"
     )
 
     println(
         "Груз с весом 20кг и объемом 80л соответствует категории Average: ${
-            (weightMin <= 50) && (50 <= weightMax) && (100 < volume)
+            (WEIGHT_MIN <= weightProductTwo) && (weightProductTwo <= WEIGHT_MAX)
+                    && (volumeProductTwo < VOLUME)
         }"
     )
 
 
 }
+
+const val WEIGHT_MIN = 35
+const val WEIGHT_MAX = 100
+const val VOLUME = 100
 
