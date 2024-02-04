@@ -1,21 +1,21 @@
 fun main() {
 
-    "Создайте логин и пароль"
-    var login = readln()
-    var password = readln()
+    println("Создайте логин и пароль")
+    val login = readln()
+    val password = readln()
 
-    // Я не понимаю, как нам создать и запрашивать логин,
-    // если он заранее в переменной не объявлен.
-    // Хотел через login:Boolean = true и дальше в цикле это применять,
-    // но там это разный тип данных
-
-    while (login > true) {
-        println("Вход")
-    }
-
-    // Так не не могу понять, нужно ли 2 цикла или 1, и какое условие необходимо
+    do {
+        println("Введите логин и пароль")
+        val login1 = readln()
+        val password2 = readln()
+        if (login == login1 && password2 == password) {
+            println("Авторизация прошла успешно")
+        } else println("Попробуй еще")
 
 
-
-
+    } while (login == login1 || login != login1)
 }
+
+
+
+
