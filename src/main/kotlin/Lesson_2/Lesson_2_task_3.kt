@@ -4,12 +4,12 @@ fun main() {
     val minWay = 457
 
     val sumMinute = minWay + minDepart
-    val transMinInHours = sumMinute / oneHoursMin
-    val searchLastMin = transMinInHours * oneHoursMin
+    val transMinInHours = sumMinute / ONE_HOURS_MIN
+    val searchLastMin = transMinInHours * ONE_HOURS_MIN
 
     println("${hoursDepart + transMinInHours}:${sumMinute - searchLastMin}")
 
 
 }
 
-const val oneHoursMin = 60
+const val ONE_HOURS_MIN  = 60
