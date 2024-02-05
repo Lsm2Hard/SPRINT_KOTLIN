@@ -8,7 +8,7 @@ fun main() {
         --second
         count += 1
         println("${second}")
-        Thread.sleep(500)
+        Thread.sleep(600)
     }
     println("Прошло ${count} секунд")
 }
