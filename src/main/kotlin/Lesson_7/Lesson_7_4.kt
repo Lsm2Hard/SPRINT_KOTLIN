@@ -1,5 +1,5 @@
 fun main() {
-    println("Cколько секунд засечь")
+    println("Cколько секунд нужно засечь")
     val number = readln()!!.toInt()
 
     for (i in number downTo 0) {
