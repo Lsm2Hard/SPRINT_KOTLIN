@@ -10,10 +10,10 @@ fun main() {
     var ing = readln()
 
     for (i in listIng) {
-        if (ing == listIng[0]) {
+        if (ing == i) {
             println("Какой ингридиент добавить?")
             var adIng = readln()
-            listIng[0] = adIng
+            listIng[i] = adIng
 
             println("Готово! Вы сохранили следующий список: ${i}")
 
